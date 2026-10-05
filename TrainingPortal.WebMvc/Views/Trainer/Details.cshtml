@@ -1,0 +1,39 @@
+﻿@model TrainingPortal.Entities.Models.Trainer
+
+@{
+    ViewBag.Title = "Trainer Details";
+}
+
+<h2>Trainer Details</h2>
+
+<div>
+    <hr />
+
+    <dl class="dl-horizontal">
+
+        <dt>Trainer Id</dt>
+        <dd>@Model.TrainerId</dd>
+
+        <dt>Name</dt>
+        <dd>@Model.Name</dd>
+
+        <dt>Type</dt>
+        <dd>@Model.Type</dd>
+
+        <dt>Email</dt>
+        <dd>@Model.Email</dd>
+
+        <dt>Phone</dt>
+        <dd>@Model.Phone</dd>
+
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink(
+        "Edit",
+        "Edit",
+        new { id = Model.TrainerId })
+    |
+    @Html.ActionLink("Back To List", "Index")
+</p>

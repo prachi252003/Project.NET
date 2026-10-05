@@ -1,0 +1,47 @@
+﻿@model IEnumerable<TrainingPortal.Entities.Models.Training>
+
+@{
+    ViewBag.Title = "Training List";
+}
+
+<h2>Training List</h2>
+
+<p>
+    @Html.ActionLink("Create New Training", "Create")
+</p>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Training Id</th>
+        <th>Trainer Id</th>
+        <th>Technology Id</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TrainingId</td>
+            <td>@item.TrainerId</td>
+            <td>@item.TechnologyId</td>
+            <td>@item.StartDate.ToShortDateString()</td>
+            <td>@item.EndDate.ToShortDateString()</td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit",
+                    new { id = item.TrainingId })
+                |
+
+                @Html.ActionLink("Details", "Details",
+                    new { id = item.TrainingId })
+                |
+
+                @Html.ActionLink("Delete", "Delete",
+                    new { id = item.TrainingId })
+            </td>
+        </tr>
+    }
+</table>

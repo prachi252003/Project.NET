@@ -1,0 +1,34 @@
+﻿@model TrainingPortal.Entities.Models.Technology
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Technology Details</h2>
+
+<dl class="dl-horizontal">
+
+    <dt>Technology Id</dt>
+    <dd>@Model.TechnologyId</dd>
+
+    <dt>Name</dt>
+    <dd>@Model.Name</dd>
+
+    <dt>Level</dt>
+    <dd>@Model.Level</dd>
+
+    <dt>Duration</dt>
+    <dd>@Model.Duration</dd>
+
+</dl>
+
+<p>
+    @Html.ActionLink(
+        "Edit",
+        "Edit",
+        new { id = Model.TechnologyId })
+    |
+    @Html.ActionLink(
+        "Back To List",
+        "Index")
+</p>

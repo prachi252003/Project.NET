@@ -1,0 +1,25 @@
+﻿@model TrainingPortal.Entities.Models.Trainee
+
+<h2>Create Trainee</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.TrainingId)
+        @Html.EditorFor(m => m.TrainingId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.EmpId)
+        @Html.EditorFor(m => m.EmpId)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Status)
+        @Html.EditorFor(m => m.Status)
+    </div>
+
+    <input type="submit"
+           value="Create"
+           class="btn btn-primary" />
+}

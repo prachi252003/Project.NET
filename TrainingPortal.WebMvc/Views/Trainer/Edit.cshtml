@@ -1,0 +1,32 @@
+﻿@model TrainingPortal.Entities.Models.Trainer
+
+<h2>Edit Trainer</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.TrainerId)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.EditorFor(m => m.Name)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Type)
+        @Html.EditorFor(m => m.Type)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Email)
+        @Html.EditorFor(m => m.Email)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Phone)
+        @Html.EditorFor(m => m.Phone)
+    </div>
+
+    <input type="submit"
+           value="Save"
+           class="btn btn-success" />
+}

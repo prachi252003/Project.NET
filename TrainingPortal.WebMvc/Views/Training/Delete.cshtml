@@ -1,0 +1,29 @@
+﻿@model TrainingPortal.Entities.Models.Training
+
+<h2>Delete Training</h2>
+
+<h3>Are you sure you want to delete this training?</h3>
+
+<dl class="dl-horizontal">
+
+    <dt>Training Id</dt>
+    <dd>@Model.TrainingId</dd>
+
+    <dt>Trainer Id</dt>
+    <dd>@Model.TrainerId</dd>
+
+    <dt>Technology Id</dt>
+    <dd>@Model.TechnologyId</dd>
+
+</dl>
+
+@using (Html.BeginForm())
+{
+    <input type="submit"
+           value="Delete"
+           class="btn btn-danger" />
+}
+
+@Html.ActionLink(
+    "Back To List",
+    "Index")

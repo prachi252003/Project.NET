@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="../TrainingPortal.ConsoleTest/TrainingPortal.ConsoleTest.csproj" Id="0867ab9d-3ef6-4723-9805-bdfe056a5d93" />
+  <Project Path="../TrainingPortal.DAL/TrainingPortal.DAL.csproj" Id="fe7c2f20-cf98-4f14-b09d-de8966350388" />
+  <Project Path="../TrainingPortal.Exceptions/TrainingPortal.Exceptions.csproj" Id="d991d31d-3e4c-4763-bb5d-474012e07629" />
+  <Project Path="../TrainingPortal.WebApi/TrainingPortal.WebApi.csproj" Id="690cc695-a017-4df8-88f4-75f6ae80bc34" />
+  <Project Path="../TrainingPortal.WebMvc/TrainingPortal.WebMvc.csproj" Id="49f745cd-a931-4e7e-bcbc-a0363d20be61" />
+  <Project Path="TrainingPortal.Entities/TrainingPortal.Entities.csproj" Id="e602b096-c0c6-4cf9-98c4-ab5be413e5a8" />
+</Solution>

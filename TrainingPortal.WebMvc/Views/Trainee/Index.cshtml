@@ -1,0 +1,63 @@
+﻿@model IEnumerable<TrainingPortal.Entities.Models.Trainee>
+
+@{
+    ViewBag.Title = "Trainee List";
+}
+
+<h2>Trainee List</h2>
+
+<p>
+    @Html.ActionLink("Create New Trainee", "Create")
+</p>
+
+<table class="table table-bordered">
+
+    <tr>
+        <th>Training Id</th>
+        <th>Employee Id</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TrainingId</td>
+            <td>@item.EmpId</td>
+            <td>@item.Status</td>
+
+            <td>
+                @Html.ActionLink(
+                    "Edit",
+                    "Edit",
+                    new
+                    {
+                        trainingId = item.TrainingId,
+                        empId = item.EmpId
+                    })
+
+                |
+
+                @Html.ActionLink(
+                    "Details",
+                    "Details",
+                    new
+                    {
+                        trainingId = item.TrainingId,
+                        empId = item.EmpId
+                    })
+
+                |
+
+                @Html.ActionLink(
+                    "Delete",
+                    "Delete",
+                    new
+                    {
+                        trainingId = item.TrainingId,
+                        empId = item.EmpId
+                    })
+            </td>
+        </tr>
+    }
+</table>

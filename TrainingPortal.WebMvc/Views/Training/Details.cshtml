@@ -1,0 +1,26 @@
+﻿@model TrainingPortal.Entities.Models.Training
+
+<h2>Training Details</h2>
+
+<dl class="dl-horizontal">
+
+    <dt>Training Id</dt>
+    <dd>@Model.TrainingId</dd>
+
+    <dt>Trainer Id</dt>
+    <dd>@Model.TrainerId</dd>
+
+    <dt>Technology Id</dt>
+    <dd>@Model.TechnologyId</dd>
+
+    <dt>Start Date</dt>
+    <dd>@Model.StartDate.ToShortDateString()</dd>
+
+    <dt>End Date</dt>
+    <dd>@Model.EndDate.ToShortDateString()</dd>
+
+</dl>
+
+@Html.ActionLink(
+    "Back To List",
+    "Index")

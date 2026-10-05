@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TrainingPortal.Entities.Models.Technology>
+
+@{
+    ViewBag.Title = "Technology List";
+}
+
+<h2>Technology List</h2>
+
+<p>
+    @Html.ActionLink("Create New Technology", "Create")
+</p>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Technology Id</th>
+        <th>Name</th>
+        <th>Level</th>
+        <th>Duration</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.TechnologyId</td>
+            <td>@item.Name</td>
+            <td>@item.Level</td>
+            <td>@item.Duration</td>
+            <td>
+                @Html.ActionLink(
+                    "Edit",
+                    "Edit",
+                    new { id = item.TechnologyId })
+                |
+
+                @Html.ActionLink(
+                    "Details",
+                    "Details",
+                    new { id = item.TechnologyId })
+                |
+
+                @Html.ActionLink(
+                    "Delete",
+                    "Delete",
+                    new { id = item.TechnologyId })
+            </td>
+        </tr>
+    }
+</table>

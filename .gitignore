@@ -1,0 +1,24 @@
+# Visual Studio
+.vs/
+**/bin/
+**/obj/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build and test output
+TestResults/
+[Bb]uild/
+[Dd]ebug/
+[Rr]elease/
+
+# Local database files
+*.mdf
+*.ldf
+*.ndf
+
+# Editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

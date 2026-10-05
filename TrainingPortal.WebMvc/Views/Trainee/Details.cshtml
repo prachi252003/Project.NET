@@ -1,0 +1,20 @@
+﻿@model TrainingPortal.Entities.Models.Trainee
+
+<h2>Trainee Details</h2>
+
+<dl class="dl-horizontal">
+
+    <dt>Training Id</dt>
+    <dd>@Model.TrainingId</dd>
+
+    <dt>Employee Id</dt>
+    <dd>@Model.EmpId</dd>
+
+    <dt>Status</dt>
+    <dd>@Model.Status</dd>
+
+</dl>
+
+@Html.ActionLink(
+    "Back To List",
+    "Index")

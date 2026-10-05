@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Dashboard - Training Portal";
+}
+
+<div class="jumbotron">
+    <h1>Training Portal</h1>
+
+    <p>
+        
+    </p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <h3>Employees</h3>
+
+        @Html.ActionLink(
+            "Manage Employees",
+            "Index",
+            "Employee",
+            null,
+            new { @class = "btn btn-primary" })
+    </div>
+
+    <div class="col-md-4">
+        <h3>Technologies</h3>
+
+        @Html.ActionLink(
+            "Manage Technologies",
+            "Index",
+            "Technology",
+            null,
+            new { @class = "btn btn-success" })
+    </div>
+
+    <div class="col-md-4">
+        <h3>Trainers</h3>
+
+        @Html.ActionLink(
+            "Manage Trainers",
+            "Index",
+            "Trainer",
+            null,
+            new { @class = "btn btn-warning" })
+    </div>
+
+</div>
+
+<br />
+
+<div class="row">
+
+    <div class="col-md-4">
+        <h3>Trainings</h3>
+
+        @Html.ActionLink(
+            "Manage Trainings",
+            "Index",
+            "Training",
+            null,
+            new { @class = "btn btn-info" })
+    </div>
+
+    <div class="col-md-4">
+        <h3>Trainees</h3>
+
+        @Html.ActionLink(
+            "Manage Trainees",
+            "Index",
+            "Trainee",
+            null,
+            new { @class = "btn btn-danger" })
+    </div>
+
+</div>
